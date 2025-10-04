@@ -1,0 +1,111 @@
+# Python standard ignores
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Virtual environments
+venv/
+ENV/
+env/
+.venv/
+env.bak/
+venv.bak/
+
+# Distribution / packaging
+build/
+dist/
+*.egg-info/
+.eggs/
+pip-wheel-metadata/
+
+# IDEs and editors
+.idea/
+.vscode/
+*.sublime-workspace
+*.sublime-project
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Test and coverage
+.pytest_cache/
+.coverage
+htmlcov/
+coverage.xml
+
+# Type checkers
+.mypy_cache/
+
+# Ignore typical machine learning / large data files by extension (everywhere)
+# These are expected to be large and should not be serialized into the repo
+*.csv
+*.tsv
+*.parquet
+*.feather
+*.h5
+*.hdf5
+*.npy
+*.npz
+*.mat
+*.db
+*.sqlite
+*.db3
+*.zarr
+*.lz4
+*.avro
+*.orc
+*.log
+*.jsonl
+
+# Ignore common archive/compressed files by default (we will selectively allow archives in data/ dirs)
+*.zip
+*.tar
+*.tar.gz
+*.tgz
+*.tar.bz2
+*.tar.xz
+*.7z
+*.rar
+*.gz
+
+# ------------------------------------------------------------------
+# Allow compressed/archive files only when they are inside a directory
+# named "data" (at any nesting level). This keeps the repo small but
+# lets you track packaged datasets placed under folders named `data`.
+#
+# Gitignore rules: negation only works if parent directories are not
+# themselves ignored. We did not ignore directories named `data`, so
+# re-including archive files below will work.
+# ------------------------------------------------------------------
+
+# Un-ignore any directory named `data` (helps ensure re-include works)
+!**/data/
+!**/data/**/
+
+# Re-include common archive/compressed file types inside any `data` tree
+!**/data/**/*.zip
+!**/data/**/*.tar
+!**/data/**/*.tar.gz
+!**/data/**/*.tgz
+!**/data/**/*.tar.bz2
+!**/data/**/*.tar.xz
+!**/data/**/*.7z
+!**/data/**/*.rar
+!**/data/**/*.gz
+
+# If you want to allow other compressed dataset variants inside `data`,
+# add more negation rules above (for example: !**/data/**/*.tar.lz4 ).
+
+# Misc: keep local secrets/config out
+.env
+.env.*
+.secret
+.secrets
+
+# Notebook checkpoints
+.ipynb_checkpoints/
+
+
+#Ignore vscode AI rules
+.github/instructions/codacy.instructions.md
