@@ -80,19 +80,20 @@ coverage.xml
 # ------------------------------------------------------------------
 
 # Un-ignore any directory named `data` (helps ensure re-include works)
-!**/data/
-!**/data/**/
+# !**/data/
+# !**/data/**/
 
 # Re-include common archive/compressed file types inside any `data` tree
-!**/data/**/*.zip
-!**/data/**/*.tar
-!**/data/**/*.tar.gz
-!**/data/**/*.tgz
-!**/data/**/*.tar.bz2
-!**/data/**/*.tar.xz
-!**/data/**/*.7z
-!**/data/**/*.rar
-!**/data/**/*.gz
+# !**/data/**/*.zip
+# !**/data/**/*.tar
+# !**/data/**/*.tar.gz
+# !**/data/**/*.tgz
+# !**/data/**/*.tar.bz2
+# !**/data/**/*.tar.xz
+# !**/data/**/*.7z
+# !**/data/**/*.rar
+# !**/data/**/*.gz
+# !**/data/**/*.csv
 
 # If you want to allow other compressed dataset variants inside `data`,
 # add more negation rules above (for example: !**/data/**/*.tar.lz4 ).
@@ -109,3 +110,7 @@ coverage.xml
 
 #Ignore vscode AI rules
 .github/instructions/codacy.instructions.md
+
+
+#Ignore vscode AI rules
+.github\instructions\codacy.instructions.md
