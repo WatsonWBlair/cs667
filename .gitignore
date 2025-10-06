@@ -1,3 +1,6 @@
+# Codacy
+.codacy/
+
 # Python standard ignores
 __pycache__/
 *.py[cod]
