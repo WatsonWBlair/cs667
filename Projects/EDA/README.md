@@ -111,10 +111,12 @@ This project utilized AI assistance for the following purposes:
 **Important Note**: AI was NOT used for any code generation in the Jupyter notebooks. All data analysis code, data cleaning procedures, feature engineering logic, and visualization implementations were developed without AI assistance.
 
 ## Author
+
 Watson Blair
-watsonwblair@gmail.com
-wb43728n@pace.edu
+Personal Email: [watsonwblair@gmail.com](mailto:watsonwblair@gmail.com)
+School Email: [wb43728n@pace.edu](mailto:wb43728n@pace.edu)
 U00700851
 
 ## Course:
+
 CS667-72872 Fall 2025
