@@ -41,7 +41,7 @@ def labelEncode(data: pd.DataFrame, encodeFeatures: list[str]):
 
     return result
 
-def oneHotEnocde(data: pd.DataFrame, encodeFeatures: list[str]):
+def oneHotEncode(data: pd.DataFrame, encodeFeatures: list[str]):
     """
     Performs integer One Hot Encoding on the provided features.
 
