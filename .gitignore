@@ -117,3 +117,5 @@ coverage.xml
 
 #Ignore vscode AI rules
 .github\instructions\codacy.instructions.md
+
+!**/data/enhanced_raw_data.csv
