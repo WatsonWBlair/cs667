@@ -107,6 +107,9 @@ coverage.xml
 .secret
 .secrets
 
+# Claude Code local settings
+.claude/
+
 # Notebook checkpoints
 .ipynb_checkpoints/
 
