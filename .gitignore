@@ -122,3 +122,5 @@ coverage.xml
 .github\instructions\codacy.instructions.md
 
 !**/data/enhanced_raw_data.csv
+!**/data/test.csv
+!**/data/train.csv
